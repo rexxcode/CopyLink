@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fawwaz Bayureksa</title>
+    <style>
+        p{
+            text-align: center;
+            padding-left: 30rem;
+            padding-right: 30rem;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h3>Copy Link</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Esse expedita est quas possimus delectus
+            modi consectetur ea id, deleniti veniam!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+            voluptatem quam quas ullam ab possimus dolore
+            dolorum corrupti doloremque, similique nemo consequuntur iste molestiae
+            reiciendis! Nam deleniti id quas eius?
+        </p>
+        <textarea placeholder="tempel disini" cols="60" rows="10">
+
+        </textarea>
+    </center>
+
+    <script>
+        document.addEventListener('copy',(event) => {
+            const pagelink = '\n\n (c)Fawwazbayureksa.com';
+            event.clipboardData.setData ('text/plain',
+            document.getSelection()+pagelink
+            );
+            event.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
